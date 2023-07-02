@@ -3,10 +3,12 @@
 #install
 apt update && apt upgrade
 apt install python3 python3-pip git
+sudo apt-get install python3-dev python3-setuptools
 git clone https://github.com/lunoxxdev/bot_panel.git
 unzip bot_panel/xolpanel.zip
 pip3 install -r xolpanel/requirements.txt
-pip3 install pillow
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
 
 #isi data
 echo ""
